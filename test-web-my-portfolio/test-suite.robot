@@ -28,5 +28,21 @@ testcase-projects
 
 
 
+*** Keywords ***
+
+Scroll Down Until End
+    ${previous_height}=    Execute Javascript    return document.body.scrollHeight;
+    FOR  ${i}    IN RANGE    10
+        Execute Javascript    window.scrollTo(0, document.body.scrollHeight);
+        Sleep    1s
+        ${current_height}=    Execute Javascript    return document.body.scrollHeight;
+        Exit For Loop If    '${current_height}' == '${previous_height}'
+        ${previous_height}=    Set Variable    ${current_height}
+        Sleep    2s
+    END
+
+
+
+
 
 
