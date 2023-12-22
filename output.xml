@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.18 on linux)" generated="20231221 21:00:44.516" rpa="false" schemaversion="4">
+<suite id="s1" name="Test-Suite" source="/home/aldoalfians/_learn/_python/basic-automation/test-web/test-suite.robot">
+<test id="s1-t1" name="testcase-login-1" line="9">
+<kw name="Open Browser">
+<arg>http://127.0.0.1:3000</arg>
+<arg>firefox</arg>
+<msg timestamp="20231221 21:00:44.544" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20231221 21:00:44.544" endtime="20231221 21:00:44.544"/>
+</kw>
+<status status="FAIL" starttime="20231221 21:00:44.541" endtime="20231221 21:00:44.544">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20231221 21:00:44.517" endtime="20231221 21:00:44.545"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test-Suite">Test-Suite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231221 21:00:44.541" level="ERROR">Error in file '/home/aldoalfians/_learn/_python/basic-automation/test-web/test-suite.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/aldoalfians/_learn/_python/basic-automation/venv/bin
+  /usr/lib/python39.zip
+  /usr/lib/python3.9
+  /usr/lib/python3.9/lib-dynload
+  /home/aldoalfians/_learn/_python/basic-automation/venv/lib/python3.9/site-packages</msg>
+</errors>
+</robot>
